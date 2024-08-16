@@ -1,6 +1,6 @@
 # Lung Cancer Prediction using Artificial Neural Networks (ANN)
 
-Lung cancer is the primary cause of cancer-related deaths globally. This project aims to predict the risk of lung cancer by categorizing cases into three risk levels: high, medium, and low. We used an Artificial Neural Network (ANN) model and compared its performance with other machine learning and deep learning models. The ANN model achieved a high accuracy of 94.9% using the Adam optimizer, making it an effective tool for early lung cancer prediction.
+Lung cancer is the primary cause of cancer-related deaths globally. This project aims to predict the risk of lung cancer by categorizing cases into three risk levels: high, medium, and low. We used an Artificial Neural Network (ANN) model and compared its performance with other machine learning and deep learning models. The ANN model achieved a high accuracy of 92.00% using the Adam optimizer, making it an effective tool for early lung cancer prediction.
 
 ## Table of Contents
 
@@ -23,8 +23,8 @@ Lung cancer is a significant health issue, with smoking and air pollution being 
 The dataset used in this project includes patient data with 26 attributes related to lung cancer diagnosis. This data is crucial for training and evaluating the machine learning models used in this study.
 
 - *Attributes:* Age, Gender, Smoking Habits, Family History, Exposure to Air Pollution, etc.
-- *Number of Records:* [Number of records in your dataset]
-- *Source:* [Mention the source of the dataset if available]
+- *Number of Records:* [1000]
+- *Source:* [Kaggle]
 
 ## Installation
 
@@ -51,6 +51,12 @@ To get started with this project, follow these steps:
 To use the model for predicting lung cancer risk, you can either run the provided Jupyter Notebook DLproject.ipynb or integrate the model into your own project. The notebook contains all the necessary code for data preprocessing, model training, and evaluation.
 
 ## Modeling Approach
+1. Problem statement
+2. Data pre-processing
+3. Model Architecture
+4. Training the model
+5. Model evaluation
+6. Model optimization
 
 ### Data Preprocessing
 
@@ -64,8 +70,8 @@ The data preprocessing steps include:
 
 The ANN model used in this project has the following architecture:
 
-- *Input Layer:* [Number of input neurons]
-- *Hidden Layers:* [Number of hidden layers and neurons]
+- *Input Layer:* [Number of input neurons - 8]
+- *Hidden Layers:* [Number of hidden layers-3]
 - *Activation Functions:* ReLU for hidden layers, Softmax for the output layer
 - *Optimizer:* Adam
 - *Loss Function:* Categorical Crossentropy
@@ -76,12 +82,11 @@ The model was trained on the training set and evaluated on the test set using va
 
 ## Results
 
-The ANN model achieved an accuracy of 94.9% on the test set, outperforming other machine learning models such as SVM, Random Forest, and Logistic Regression.
+The ANN model achieved an accuracy of 92% on the test set, outperforming other machine learning models such as SVM, Random Forest, and Logistic Regression.
 
-- *Accuracy:* 94.9%
-- *Precision:* [Precision value]
-- *Recall:* [Recall value]
-- *F1-score:* [F1-score value]
+- *Accuracy:* 92.00%
+- *Loss:* [0.496]
+
 
 These results demonstrate the effectiveness of the ANN model in predicting lung cancer risk.
 
@@ -92,8 +97,3 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-- [Mention any individuals, organizations, or resources that contributed to your project]
-- Special thanks to [Name of any collaborators or mentors] for their guidance and support.
